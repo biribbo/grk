@@ -17,8 +17,6 @@ namespace Core
 		GLuint vertexIndexBuffer;
 		int size = 0;
 
-        void initFromOBJ(obj::Model& model);
-
 		void initFromAssimpMesh(aiMesh* mesh);
 	};
 

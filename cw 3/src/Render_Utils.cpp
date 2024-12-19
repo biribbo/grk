@@ -17,7 +17,6 @@ void Core::RenderContext::initFromAssimpMesh(aiMesh* mesh) {
 
     std::vector<aiVector2D> textureCoord;
     std::vector<unsigned int> indices;
-    //tex coord must be converted to 2d vecs
     for (unsigned int i = 0; i < mesh->mNumVertices; i++)
     {
         if (mesh->mTextureCoords[0] != nullptr) {
@@ -34,7 +33,6 @@ void Core::RenderContext::initFromAssimpMesh(aiMesh* mesh) {
     for (unsigned int i = 0; i < mesh->mNumFaces; i++)
     {
         aiFace face = mesh->mFaces[i];
-        // retrieve all indices of the face and store them in the indices vector
         for (unsigned int j = 0; j < face.mNumIndices; j++)
             indices.push_back(face.mIndices[j]);
     }

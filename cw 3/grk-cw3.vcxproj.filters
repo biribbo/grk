@@ -47,21 +47,15 @@
     <ClInclude Include="src\Camera.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\ex_3_1.hpp">
+    <ClInclude Include="src\ludzik.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\shader_3_1.vert">
+    <None Include="shaders\shader_body.vert">
       <Filter>Shader Files</Filter>
     </None>
-    <None Include="shaders\shader_3_1.frag">
-      <Filter>Shader Files</Filter>
-    </None>
-    <None Include="shaders\shader_2_1.vert">
-      <Filter>Shader Files</Filter>
-    </None>
-    <None Include="shaders\shader_2_1.frag">
+    <None Include="shaders\shader_body.frag">
       <Filter>Shader Files</Filter>
     </None>
   </ItemGroup>

@@ -19,23 +19,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Camera.h" />
-    <ClInclude Include="src\ex_3_1.hpp" />
+    <ClInclude Include="src\ludzik.hpp" />
     <ClInclude Include="src\objload.h" />
     <ClInclude Include="src\Render_Utils.h" />
     <ClInclude Include="src\Shader_Loader.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\shader_2_1.frag" />
-    <None Include="shaders\shader_2_1.vert" />
-    <None Include="shaders\shader_3_1.frag" />
-    <None Include="shaders\shader_3_1.vert" />
+    <None Include="shaders\shader_body.frag" />
+    <None Include="shaders\shader_body.vert" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F201D210-49F1-4EFF-B8A0-56D56880D14B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>grk-cw3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>grk-cw3</ProjectName>
+    <ProjectName>ludzik</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -104,7 +102,6 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32.lib;$(SolutionDir)\dependencies\glfw-3.3.8.bin.WIN32\lib-vc2019\glfw3.lib;$(SolutionDir)\dependencies\glfw-3.3.8.bin.WIN32\lib-vc2019\glfw3dll.lib;zlibd.lib;assimp-vc141-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)dependencies\glfw-3.3.8.bin.WIN32\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
